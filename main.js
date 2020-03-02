@@ -1,5 +1,5 @@
 //adding form value to list
- class form{
+/* class form{
     static addForm(){
         var form = document.getElementById("FormInput").value;
     let uol = document.getElementById('uil');
@@ -25,3 +25,12 @@ bit.addEventListener('click', form.addForm, false);
 //Remove book
 document.querySelector('#uil').addEventListener('click',(e)=>{
     form.deleteEntry(e.target)});
+
+*/
+    function addNote (){
+        let form = document.getElementById("FormInput").value;
+        let uol = document.getElementById('uil');
+        let liu = document.createElement("li");
+          liu.innerHTML = `<p>${form} &nbsp <button class="btn btn-danger btn-sm del">X</button></p><hr>`;
+        
+    }
